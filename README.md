@@ -1,4 +1,4 @@
-# Task 3.1 · Convection-permitting modelling
+# Task 3.2 · Convection-permitting modelling
 
 Variable list as
 [CSV](./data-request.csv) |
