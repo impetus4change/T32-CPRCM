@@ -2,10 +2,9 @@ import datetime
 import pandas as pd
 
 span_style = '''
-span.planned {color: #F54d4d; font-weight: bold}
-span.running {color: #009900; font-weight: bold}
-span.completed {color: black; font-weight: bold}
-span.published {color: #3399FF; font-weight: bold}
+span.core {color: #93c47d; font-weight: bold}
+span.tier1 {color: #a4c2f4; font-weight: bold}
+span.tier2 {color: #d35f98; font-weight: bold}
 '''
 
 html_style = '''
@@ -33,6 +32,12 @@ html_legend = '''
 '''
 
 table_props = [('width', '100px')]
+
+priority_spans = {
+  'I4C-CORE': 'core',
+  'I4C-TIER1': 'tier1',
+  'I4C-TIER2': 'tier2'
+}
 
 def html_header(title = 'CORDEX-CMIP6 downscaling plans'):
   return(f'''<!DOCTYPE html>
@@ -68,13 +73,13 @@ def addtag(word, field):
     rval = f'<span class="tag">{word[1:]}</span>'
   elif (field == 'comment') and word.startswith('http'):
     rval = f'<a href="{word}">{word}</a>'
-  elif (field == 'status') and word in ['selected', 'planned', 'running', 'completed', 'published']:
-    rval = f'<span class="{word}">{word}</span>'
+  elif (field == 'priority') and word in priority_spans.keys():
+    rval = f'<span class="{priority_spans[word]}">{word}</span>'
   return(rval)
 
 def taggify(text, field):
   rval = text
-  if field in ['status', 'comments', 'comment']:
+  if field in ['priority', 'comment']:
     rval = ' '.join([addtag(x, field) for x in text.split(' ')])
   return(rval)
 

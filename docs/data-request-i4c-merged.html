@@ -1,0 +1,2813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="author" content="J. Fernandez" />
+<meta name="keywords" content="HTML, CSS, JavaScript" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+<script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/plug-ins/2.0.5/features/deepLink/dataTables.deepLink.min.js"></script>
+<script type="text/javascript">
+$(document).ready( function () {
+    $('#table_id').DataTable( $.fn.dataTable.ext.deepLink( [
+      'search.search'
+    ]));
+} );
+</script>
+<title>I4C CPRCM requested variable list</title>
+<style>
+span.tag {
+  background-color: #c5def5;
+  padding: 0 10px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 22px !important;
+  border: 1px solid transparent;
+  border-radius: 2em;
+}
+a {color: DodgerBlue}
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: underline; }
+a:active { text-decoration: underline;}
+
+span.core {color: #93c47d; font-weight: bold}
+span.tier1 {color: #a4c2f4; font-weight: bold}
+span.tier2 {color: #d35f98; font-weight: bold}
+
+</style>
+</head>
+<body>
+<h1>I4C CPRCM requested variable list</h1>This table includes also the priority variables from the CORDEX FPS-URB-RCC and FPS-CONV
+<table id="table_id" class="display">
+    <thead>
+        <tr>
+              <th>out_name</th>
+              <th>frequency</th>
+              <th>units</th>
+              <th>long_name</th>
+              <th>priority</th>
+              <th>priority-urb</th>
+              <th>priority-conv</th>
+              <th>comment</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>anthroheat</td>
+            <td>1hr</td>
+            <td>W/m2</td>
+            <td>Anthropogenic heat flux</td>
+            <td></td>
+            <td>URB-URB-RCC</td>
+            <td></td>
+            <td>On grid cell avarage</td>
+        </tr>
+        <tr>
+            <td>anthroheat</td>
+            <td>day</td>
+            <td>W/m2</td>
+            <td>Anthropogenic heat flux</td>
+            <td></td>
+            <td>URB-URB-RCC</td>
+            <td></td>
+            <td>On grid cell avarage</td>
+        </tr>
+        <tr>
+            <td>anthroheat</td>
+            <td>mon</td>
+            <td>W/m2</td>
+            <td>Anthropogenic heat flux</td>
+            <td></td>
+            <td>URB-URB-RCC</td>
+            <td></td>
+            <td>On grid cell avarage</td>
+        </tr>
+        <tr>
+            <td>areacella</td>
+            <td>fx</td>
+            <td>m2</td>
+            <td>Atmosphere Grid-Cell Area</td>
+            <td></td>
+            <td></td>
+            <td>CONV-CORE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>cape</td>
+            <td>day</td>
+            <td>J kg-1</td>
+            <td>Convective Available Potential Energy</td>
+            <td></td>
+            <td></td>
+            <td>CONV-TIER1</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>cg_lighning</td>
+            <td>day</td>
+            <td>counts</td>
+            <td>Cloud-ground lightning flashes</td>
+            <td></td>
+            <td></td>
+            <td>CONV-TIER1</td>
+            <td>explicitly declare how the separation between IC and CG was performed</td>
+        </tr>
+        <tr>
+            <td>cin</td>
+            <td>day</td>
+            <td>J kg-1</td>
+            <td>Convective Inhibition</td>
+            <td></td>
+            <td></td>
+            <td>CONV-TIER1</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>clgvi</td>
+            <td>1hr</td>
+            <td>kg m-2</td>
+            <td>Vertical integral of mass content of graupel</td>
+            <td></td>
+            <td></td>
+            <td>CONV-TIER1</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>clhvi</td>
+            <td>1hr</td>
+            <td>kg m-2</td>
+            <td>Vertical integral of mass content of hail</td>
+            <td></td>
+            <td></td>
+            <td>CONV-TIER1</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>clivi</td>
+            <td>1hr</td>
+            <td>kg m-2</td>
+            <td>Ice Water Path</td>
+            <td></td>
+            <td></td>
+            <td>CONV-CORE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>clt</td>
+            <td>1hr</td>
+            <td>%</td>
+            <td>Total Cloud Cover Percentage</td>
+            <td></td>
+            <td>URB-CORE</td>
+            <td>CONV-CORE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>clt</td>
+            <td>day</td>
+            <td>%</td>
+            <td>Total Cloud Cover Percentage</td>
+            <td></td>
+            <td>URB-CORE</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>clt</td>
+            <td>mon</td>
+            <td>%</td>
+            <td>Total Cloud Cover Percentage</td>
+            <td></td>
+            <td>URB-CORE</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>clwvi</td>
+            <td>1hr</td>
+            <td>kg m-2</td>
+            <td>Condensed Water Path</td>
+            <td></td>
+            <td></td>
+            <td>CONV-CORE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>evspsbl</td>
+            <td>1hr</td>
+            <td>kg m-2 s-1</td>
+            <td>Evaporation Including Sublimation and Transpiration</td>
+            <td></td>
+            <td>URB-CORE</td>
+            <td>CONV-CORE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>evspsbl</td>
+            <td>day</td>
+            <td>kg m-2 s-1</td>
+            <td>Evaporation Including Sublimation and Transpiration</td>
+            <td></td>
+            <td>URB-CORE</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>evspsbl</td>
+            <td>mon</td>
+            <td>kg m-2 s-1</td>
+            <td>Evaporation Including Sublimation and Transpiration</td>
+            <td></td>
+            <td>URB-CORE</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>evspsblpot</td>
+            <td>1hr</td>
+            <td>kg m-2 s-1</td>
+            <td>Potential Evapotranspiration</td>
+            <td></td>
+            <td></td>
+            <td>CONV-CORE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>hfls</td>
+            <td>1hr</td>
+            <td>W m-2</td>
+            <td>Surface Upward Latent Heat Flux</td>
+            <td></td>
+            <td>URB-CORE</td>
+            <td>CONV-CORE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>hfls</td>
+            <td>day</td>
+            <td>W m-2</td>
+            <td>Surface Upward Latent Heat Flux</td>
+            <td></td>
+            <td>URB-CORE</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>hfls</td>
+            <td>mon</td>
+            <td>W m-2</td>
+            <td>Surface Upward Latent Heat Flux</td>
+            <td></td>
+            <td>URB-CORE</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>hfss</td>
+            <td>1hr</td>
+            <td>W m-2</td>
+            <td>Surface Upward Sensible Heat Flux</td>
+            <td></td>
+            <td>URB-CORE</td>
+            <td>CONV-CORE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>hfss</td>
+            <td>day</td>
+            <td>W m-2</td>
+            <td>Surface Upward Sensible Heat Flux</td>
+            <td></td>
+            <td>URB-CORE</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>hfss</td>
+            <td>mon</td>
+            <td>W m-2</td>
+            <td>Surface Upward Sensible Heat Flux</td>
+            <td></td>
+            <td>URB-CORE</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>hurs</td>
+            <td>1hr</td>
+            <td>%</td>
+            <td>Near-Surface Relative Humidity</td>
+            <td><span class="core">I4C-CORE</span></td>
+            <td>URB-CORE</td>
+            <td></td>
+            <td><span class="tag">T33</span> <span class="tag">WP6</span></td>
+        </tr>
+        <tr>
+            <td>hurs</td>
+            <td>day</td>
+            <td>%</td>
+            <td>Near-Surface Relative Humidity</td>
+            <td><span class="core">I4C-CORE</span></td>
+            <td>URB-CORE</td>
+            <td></td>
+            <td><span class="tag">T33</span> <span class="tag">WP4</span></td>
+        </tr>
+        <tr>
+            <td>hurs</td>
+            <td>mon</td>
+            <td>%</td>
+            <td>Near-Surface Relative Humidity</td>
+            <td></td>
+            <td>URB-CORE</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>hurscan</td>
+            <td>1hr</td>
+            <td>%</td>
+            <td>Near-Surface Relative Humidity within canyon</td>
+            <td></td>
+            <td>URB-URB-RCC</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>hurscan</td>
+            <td>day</td>
+            <td>%</td>
+            <td>Near-Surface Relative Humidity within canyon</td>
+            <td></td>
+            <td>URB-URB-RCC</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>hurscan</td>
+            <td>mon</td>
+            <td>%</td>
+            <td>Near-Surface Relative Humidity within canyon</td>
+            <td></td>
+            <td>URB-URB-RCC</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>hus1000</td>
+            <td>1hr</td>
+            <td>1</td>
+            <td>Specific Humidity</td>
+            <td><span class="tier1">I4C-TIER1</span></td>
+            <td></td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>hus1000</td>
+            <td>3hr</td>
+            <td>1</td>
+            <td>Specific Humidity</td>
+            <td></td>
+            <td></td>
+            <td>CONV-CORE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>hus1000</td>
+            <td>day</td>
+            <td>1</td>
+            <td>Specific Humidity</td>
+            <td><span class="tier1">I4C-TIER1</span></td>
+            <td></td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>hus200</td>
+            <td>1hr</td>
+            <td>1</td>
+            <td>Specific Humidity</td>
+            <td><span class="tier1">I4C-TIER1</span></td>
+            <td></td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>hus200</td>
+            <td>3hr</td>
+            <td>1</td>
+            <td>Specific Humidity</td>
+            <td></td>
+            <td></td>
+            <td>CONV-CORE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>hus200</td>
+            <td>day</td>
+            <td>1</td>
+            <td>Specific Humidity</td>
+            <td><span class="tier1">I4C-TIER1</span></td>
+            <td></td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>hus500</td>
+            <td>1hr</td>
+            <td>1</td>
+            <td>Specific Humidity</td>
+            <td><span class="tier1">I4C-TIER1</span></td>
+            <td></td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>hus500</td>
+            <td>3hr</td>
+            <td>1</td>
+            <td>Specific Humidity</td>
+            <td></td>
+            <td></td>
+            <td>CONV-CORE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>hus500</td>
+            <td>day</td>
+            <td>1</td>
+            <td>Specific Humidity</td>
+            <td><span class="tier1">I4C-TIER1</span></td>
+            <td></td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>hus50m</td>
+            <td>1hr</td>
+            <td>1</td>
+            <td>Specific Humidity at 50m</td>
+            <td></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td>requested for urban modeling</td>
+        </tr>
+        <tr>
+            <td>hus50m</td>
+            <td>day</td>
+            <td>1</td>
+            <td>Specific Humidity at 50m</td>
+            <td></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td>requested for urban modeling</td>
+        </tr>
+        <tr>
+            <td>hus50m</td>
+            <td>mon</td>
+            <td>1</td>
+            <td>Specific Humidity at 50m</td>
+            <td></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td>requested for urban modeling</td>
+        </tr>
+        <tr>
+            <td>hus700</td>
+            <td>1hr</td>
+            <td>1</td>
+            <td>Specific Humidity</td>
+            <td><span class="tier1">I4C-TIER1</span></td>
+            <td></td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>hus700</td>
+            <td>3hr</td>
+            <td>1</td>
+            <td>Specific Humidity</td>
+            <td></td>
+            <td></td>
+            <td>CONV-CORE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>hus700</td>
+            <td>day</td>
+            <td>1</td>
+            <td>Specific Humidity</td>
+            <td><span class="tier1">I4C-TIER1</span></td>
+            <td></td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>hus850</td>
+            <td>1hr</td>
+            <td>1</td>
+            <td>Specific Humidity</td>
+            <td><span class="tier1">I4C-TIER1</span></td>
+            <td></td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>hus850</td>
+            <td>3hr</td>
+            <td>1</td>
+            <td>Specific Humidity</td>
+            <td></td>
+            <td></td>
+            <td>CONV-CORE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>hus850</td>
+            <td>day</td>
+            <td>1</td>
+            <td>Specific Humidity</td>
+            <td><span class="tier1">I4C-TIER1</span></td>
+            <td></td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>hus925</td>
+            <td>1hr</td>
+            <td>1</td>
+            <td>Specific Humidity</td>
+            <td><span class="tier1">I4C-TIER1</span></td>
+            <td></td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>hus925</td>
+            <td>3hr</td>
+            <td>1</td>
+            <td>Specific Humidity</td>
+            <td></td>
+            <td></td>
+            <td>CONV-CORE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>hus925</td>
+            <td>day</td>
+            <td>1</td>
+            <td>Specific Humidity</td>
+            <td><span class="tier1">I4C-TIER1</span></td>
+            <td></td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>huss</td>
+            <td>1hr</td>
+            <td>1</td>
+            <td>Near-Surface Specific Humidity</td>
+            <td><span class="core">I4C-CORE</span></td>
+            <td>URB-CORE</td>
+            <td>CONV-CORE</td>
+            <td><span class="tag">T33</span> <span class="tag">WP6</span></td>
+        </tr>
+        <tr>
+            <td>huss</td>
+            <td>day</td>
+            <td>1</td>
+            <td>Near-Surface Specific Humidity</td>
+            <td><span class="core">I4C-CORE</span></td>
+            <td>URB-CORE</td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>huss</td>
+            <td>mon</td>
+            <td>1</td>
+            <td>Near-Surface Specific Humidity</td>
+            <td></td>
+            <td>URB-CORE</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>husscan</td>
+            <td>1hr</td>
+            <td>1</td>
+            <td>Near-Surface Specific Humidity within canyon</td>
+            <td></td>
+            <td>URB-URB-RCC</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>husscan</td>
+            <td>day</td>
+            <td>1</td>
+            <td>Near-Surface Specific Humidity within canyon</td>
+            <td></td>
+            <td>URB-URB-RCC</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>husscan</td>
+            <td>mon</td>
+            <td>1</td>
+            <td>Near-Surface Specific Humidity within canyon</td>
+            <td></td>
+            <td>URB-URB-RCC</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ic_lightning</td>
+            <td>day</td>
+            <td>counts</td>
+            <td>Intra-cloud lightning flashes</td>
+            <td></td>
+            <td></td>
+            <td>CONV-TIER1</td>
+            <td>explicitly declare how the separation between IC and CG was performed</td>
+        </tr>
+        <tr>
+            <td>mrro</td>
+            <td>1hr</td>
+            <td>kg m-2 s-1</td>
+            <td>Total Runoff</td>
+            <td></td>
+            <td></td>
+            <td>CONV-CORE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>mrros</td>
+            <td>1hr</td>
+            <td>kg m-2 s-1</td>
+            <td>Surface Runoff</td>
+            <td></td>
+            <td></td>
+            <td>CONV-CORE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>mrso</td>
+            <td>day</td>
+            <td>kg m-2</td>
+            <td>Total Soil Moisture Content</td>
+            <td></td>
+            <td></td>
+            <td>CONV-CORE</td>
+            <td>The mass of water in all phases per unit area, summed over all soil layers.</td>
+        </tr>
+        <tr>
+            <td>mrsofc</td>
+            <td>fx</td>
+            <td>kg m-2</td>
+            <td>Capacity of Soil to Store Water  (Field Capacity)</td>
+            <td></td>
+            <td>URB-TIER2</td>
+            <td>CONV-CORE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>mrsol</td>
+            <td>day</td>
+            <td>kg m-2</td>
+            <td>Total Water Content of Soil Layer</td>
+            <td></td>
+            <td></td>
+            <td>CONV-CORE</td>
+            <td>The mass of water in all phases in each soil layer (3D variable). Reported as missing for grid cells with no land.</td>
+        </tr>
+        <tr>
+            <td>orog</td>
+            <td>fx</td>
+            <td>m</td>
+            <td>Surface Altitude</td>
+            <td></td>
+            <td>URB-CORE</td>
+            <td>CONV-CORE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>pr</td>
+            <td>1hr</td>
+            <td>kg m-2 s-1</td>
+            <td>Precipitation</td>
+            <td><span class="core">I4C-CORE</span></td>
+            <td>URB-CORE</td>
+            <td>CONV-CORE</td>
+            <td><span class="tag">T33</span> <span class="tag">WP4</span> <span class="tag">WP6</span></td>
+        </tr>
+        <tr>
+            <td>pr</td>
+            <td>day</td>
+            <td>kg m-2 s-1</td>
+            <td>Precipitation</td>
+            <td><span class="core">I4C-CORE</span></td>
+            <td>URB-CORE</td>
+            <td></td>
+            <td><span class="tag">T33</span> <span class="tag">WP4</span> <span class="tag">WP6</span></td>
+        </tr>
+        <tr>
+            <td>pr</td>
+            <td>mon</td>
+            <td>kg m-2 s-1</td>
+            <td>Precipitation</td>
+            <td><span class="core">I4C-CORE</span></td>
+            <td>URB-CORE</td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>prc</td>
+            <td>1hr</td>
+            <td>kg m-2 s-1</td>
+            <td>Convective Precipitation</td>
+            <td></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>prc</td>
+            <td>day</td>
+            <td>kg m-2 s-1</td>
+            <td>Convective Precipitation</td>
+            <td></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>prc</td>
+            <td>mon</td>
+            <td>kg m-2 s-1</td>
+            <td>Convective Precipitation</td>
+            <td></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>prw</td>
+            <td>1hr</td>
+            <td>kg m-2</td>
+            <td>Water Vapor Path</td>
+            <td></td>
+            <td></td>
+            <td>CONV-CORE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ps</td>
+            <td>1hr</td>
+            <td>Pa</td>
+            <td>Surface Air Pressure</td>
+            <td><span class="core">I4C-CORE</span></td>
+            <td>URB-CORE</td>
+            <td></td>
+            <td><span class="tag">WP6</span></td>
+        </tr>
+        <tr>
+            <td>ps</td>
+            <td>6hr</td>
+            <td>Pa</td>
+            <td>Surface Air Pressure</td>
+            <td></td>
+            <td></td>
+            <td>CONV-CORE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ps</td>
+            <td>day</td>
+            <td>Pa</td>
+            <td>Surface Air Pressure</td>
+            <td></td>
+            <td>URB-CORE</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ps</td>
+            <td>mon</td>
+            <td>Pa</td>
+            <td>Surface Air Pressure</td>
+            <td></td>
+            <td>URB-CORE</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>psl</td>
+            <td>1hr</td>
+            <td>Pa</td>
+            <td>Sea Level Pressure</td>
+            <td><span class="core">I4C-CORE</span></td>
+            <td>URB-CORE</td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>psl</td>
+            <td>6hr</td>
+            <td>Pa</td>
+            <td>Sea Level Pressure</td>
+            <td></td>
+            <td></td>
+            <td>CONV-CORE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>psl</td>
+            <td>day</td>
+            <td>Pa</td>
+            <td>Sea Level Pressure</td>
+            <td><span class="core">I4C-CORE</span></td>
+            <td>URB-CORE</td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>psl</td>
+            <td>mon</td>
+            <td>Pa</td>
+            <td>Sea Level Pressure</td>
+            <td></td>
+            <td>URB-CORE</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>rlds</td>
+            <td>1hr</td>
+            <td>W m-2</td>
+            <td>Surface Downwelling Longwave Radiation</td>
+            <td><span class="core">I4C-CORE</span></td>
+            <td>URB-CORE</td>
+            <td>CONV-CORE</td>
+            <td><span class="tag">T33</span> <span class="tag">WP6</span></td>
+        </tr>
+        <tr>
+            <td>rlds</td>
+            <td>day</td>
+            <td>W m-2</td>
+            <td>Surface Downwelling Longwave Radiation</td>
+            <td><span class="core">I4C-CORE</span></td>
+            <td>URB-CORE</td>
+            <td></td>
+            <td><span class="tag">T33</span> <span class="tag">WP6</span></td>
+        </tr>
+        <tr>
+            <td>rlds</td>
+            <td>mon</td>
+            <td>W m-2</td>
+            <td>Surface Downwelling Longwave Radiation</td>
+            <td></td>
+            <td>URB-CORE</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>rlus</td>
+            <td>1hr</td>
+            <td>W m-2</td>
+            <td>Surface Upwelling Longwave Radiation</td>
+            <td></td>
+            <td></td>
+            <td>CONV-CORE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>rootd</td>
+            <td>fx</td>
+            <td>m</td>
+            <td>Maximum Root Depth</td>
+            <td></td>
+            <td></td>
+            <td>CONV-CORE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>rsds</td>
+            <td>1hr</td>
+            <td>W m-2</td>
+            <td>Surface Downwelling Shortwave Radiation</td>
+            <td><span class="core">I4C-CORE</span></td>
+            <td>URB-CORE</td>
+            <td>CONV-CORE</td>
+            <td><span class="tag">T33</span> <span class="tag">WP6</span></td>
+        </tr>
+        <tr>
+            <td>rsds</td>
+            <td>day</td>
+            <td>W m-2</td>
+            <td>Surface Downwelling Shortwave Radiation</td>
+            <td><span class="core">I4C-CORE</span></td>
+            <td>URB-CORE</td>
+            <td></td>
+            <td><span class="tag">T33</span> <span class="tag">WP6</span></td>
+        </tr>
+        <tr>
+            <td>rsds</td>
+            <td>mon</td>
+            <td>W m-2</td>
+            <td>Surface Downwelling Shortwave Radiation</td>
+            <td></td>
+            <td>URB-CORE</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>rsus</td>
+            <td>1hr</td>
+            <td>W m-2</td>
+            <td>Surface Upwelling Shortwave Radiation</td>
+            <td></td>
+            <td></td>
+            <td>CONV-CORE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>sfcWind</td>
+            <td>1hr</td>
+            <td>m s-1</td>
+            <td>Near-Surface Wind Speed</td>
+            <td><span class="core">I4C-CORE</span></td>
+            <td>URB-CORE</td>
+            <td></td>
+            <td><span class="tag">T33</span> <span class="tag">WP6</span></td>
+        </tr>
+        <tr>
+            <td>sfcWind</td>
+            <td>day</td>
+            <td>m s-1</td>
+            <td>Near-Surface Wind Speed</td>
+            <td><span class="core">I4C-CORE</span></td>
+            <td>URB-CORE</td>
+            <td></td>
+            <td><span class="tag">T33</span> <span class="tag">WP4</span> <span class="tag">WP6</span></td>
+        </tr>
+        <tr>
+            <td>sfcWind</td>
+            <td>mon</td>
+            <td>m s-1</td>
+            <td>Near-Surface Wind Speed</td>
+            <td><span class="core">I4C-CORE</span></td>
+            <td>URB-CORE</td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>sfcWindcan</td>
+            <td>1hr</td>
+            <td>m s-1</td>
+            <td>Near-Surface Wind Speed within canyon</td>
+            <td></td>
+            <td>URB-URB-RCC</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>sfcWindcan</td>
+            <td>day</td>
+            <td>m s-1</td>
+            <td>Near-Surface Wind Speed within canyon</td>
+            <td></td>
+            <td>URB-URB-RCC</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>sfcWindcan</td>
+            <td>mon</td>
+            <td>m s-1</td>
+            <td>Near-Surface Wind Speed within canyon</td>
+            <td></td>
+            <td>URB-URB-RCC</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>sfcWindmax</td>
+            <td>day</td>
+            <td>m s-1</td>
+            <td>Daily Maximum Near-Surface Wind Speed</td>
+            <td></td>
+            <td></td>
+            <td>CONV-CORE</td>
+            <td>Maximum from all integrated time steps per day</td>
+        </tr>
+        <tr>
+            <td>sftgif</td>
+            <td>fx</td>
+            <td>%</td>
+            <td>Percentage of the Grid Cell Covered by Glacier</td>
+            <td></td>
+            <td></td>
+            <td>CONV-CORE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>sftlaf</td>
+            <td>fx</td>
+            <td>%</td>
+            <td>Percentage of the Grid Cell Occupied by Lake</td>
+            <td></td>
+            <td>URB-TIER2</td>
+            <td></td>
+            <td>not in CMIP or in CF</td>
+        </tr>
+        <tr>
+            <td>sftlf</td>
+            <td>fx</td>
+            <td>%</td>
+            <td>Percentage of the Grid Cell Occupied by Land</td>
+            <td></td>
+            <td>URB-CORE</td>
+            <td>CONV-CORE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>sfturf</td>
+            <td>fx</td>
+            <td>%</td>
+            <td>Percentage of the Grid Cell Occupied by Urban Area</td>
+            <td></td>
+            <td>URB-CORE</td>
+            <td></td>
+            <td>not in CMIP or in CF</td>
+        </tr>
+        <tr>
+            <td>snc</td>
+            <td>day</td>
+            <td>%</td>
+            <td>Snow Area Percentage</td>
+            <td></td>
+            <td></td>
+            <td>CONV-CORE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>snd</td>
+            <td>day</td>
+            <td>m</td>
+            <td>Snow Depth</td>
+            <td></td>
+            <td></td>
+            <td>CONV-CORE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ta1000</td>
+            <td>1hr</td>
+            <td>K</td>
+            <td>Air Temperature</td>
+            <td><span class="tier1">I4C-TIER1</span></td>
+            <td></td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>ta1000</td>
+            <td>3hr</td>
+            <td>K</td>
+            <td>Air Temperature</td>
+            <td></td>
+            <td></td>
+            <td>CONV-CORE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ta1000</td>
+            <td>6hr</td>
+            <td>K</td>
+            <td>Air Temperature</td>
+            <td></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ta1000</td>
+            <td>day</td>
+            <td>K</td>
+            <td>Air Temperature</td>
+            <td><span class="tier1">I4C-TIER1</span></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>ta1000</td>
+            <td>mon</td>
+            <td>K</td>
+            <td>Air Temperature</td>
+            <td></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ta200</td>
+            <td>1hr</td>
+            <td>K</td>
+            <td>Air Temperature</td>
+            <td><span class="tier1">I4C-TIER1</span></td>
+            <td></td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>ta200</td>
+            <td>3hr</td>
+            <td>K</td>
+            <td>Air Temperature</td>
+            <td></td>
+            <td></td>
+            <td>CONV-CORE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ta200</td>
+            <td>day</td>
+            <td>K</td>
+            <td>Air Temperature</td>
+            <td><span class="tier1">I4C-TIER1</span></td>
+            <td></td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>ta500</td>
+            <td>1hr</td>
+            <td>K</td>
+            <td>Air Temperature</td>
+            <td><span class="tier1">I4C-TIER1</span></td>
+            <td></td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>ta500</td>
+            <td>3hr</td>
+            <td>K</td>
+            <td>Air Temperature</td>
+            <td></td>
+            <td></td>
+            <td>CONV-CORE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ta500</td>
+            <td>day</td>
+            <td>K</td>
+            <td>Air Temperature</td>
+            <td><span class="tier1">I4C-TIER1</span></td>
+            <td></td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>ta50m</td>
+            <td>1hr</td>
+            <td>K</td>
+            <td>Air Temperature at 50m</td>
+            <td></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td>requested for urban modeling</td>
+        </tr>
+        <tr>
+            <td>ta50m</td>
+            <td>day</td>
+            <td>K</td>
+            <td>Air Temperature at 50m</td>
+            <td></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td>requested for urban modeling</td>
+        </tr>
+        <tr>
+            <td>ta50m</td>
+            <td>mon</td>
+            <td>K</td>
+            <td>Air Temperature at 50m</td>
+            <td></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td>requested for urban modeling</td>
+        </tr>
+        <tr>
+            <td>ta700</td>
+            <td>1hr</td>
+            <td>K</td>
+            <td>Air Temperature</td>
+            <td><span class="tier1">I4C-TIER1</span></td>
+            <td></td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>ta700</td>
+            <td>3hr</td>
+            <td>K</td>
+            <td>Air Temperature</td>
+            <td></td>
+            <td></td>
+            <td>CONV-CORE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ta700</td>
+            <td>6hr</td>
+            <td>K</td>
+            <td>Air Temperature</td>
+            <td></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ta700</td>
+            <td>day</td>
+            <td>K</td>
+            <td>Air Temperature</td>
+            <td><span class="tier1">I4C-TIER1</span></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>ta700</td>
+            <td>mon</td>
+            <td>K</td>
+            <td>Air Temperature</td>
+            <td></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ta850</td>
+            <td>1hr</td>
+            <td>K</td>
+            <td>Air Temperature</td>
+            <td><span class="tier1">I4C-TIER1</span></td>
+            <td></td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>ta850</td>
+            <td>3hr</td>
+            <td>K</td>
+            <td>Air Temperature</td>
+            <td></td>
+            <td></td>
+            <td>CONV-CORE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ta850</td>
+            <td>6hr</td>
+            <td>K</td>
+            <td>Air Temperature</td>
+            <td></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ta850</td>
+            <td>day</td>
+            <td>K</td>
+            <td>Air Temperature</td>
+            <td><span class="tier1">I4C-TIER1</span></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>ta850</td>
+            <td>mon</td>
+            <td>K</td>
+            <td>Air Temperature</td>
+            <td></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ta925</td>
+            <td>1hr</td>
+            <td>K</td>
+            <td>Air Temperature</td>
+            <td><span class="tier1">I4C-TIER1</span></td>
+            <td></td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>ta925</td>
+            <td>3hr</td>
+            <td>K</td>
+            <td>Air Temperature</td>
+            <td></td>
+            <td></td>
+            <td>CONV-CORE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ta925</td>
+            <td>6hr</td>
+            <td>K</td>
+            <td>Air Temperature</td>
+            <td></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ta925</td>
+            <td>day</td>
+            <td>K</td>
+            <td>Air Temperature</td>
+            <td><span class="tier1">I4C-TIER1</span></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>ta925</td>
+            <td>mon</td>
+            <td>K</td>
+            <td>Air Temperature</td>
+            <td></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>tas</td>
+            <td>1hr</td>
+            <td>K</td>
+            <td>Near-Surface Air Temperature</td>
+            <td><span class="core">I4C-CORE</span></td>
+            <td>URB-CORE</td>
+            <td>CONV-CORE</td>
+            <td><span class="tag">T33</span> <span class="tag">WP4</span> <span class="tag">WP6</span></td>
+        </tr>
+        <tr>
+            <td>tas</td>
+            <td>day</td>
+            <td>K</td>
+            <td>Near-Surface Air Temperature</td>
+            <td><span class="core">I4C-CORE</span></td>
+            <td>URB-CORE</td>
+            <td></td>
+            <td><span class="tag">T33</span> <span class="tag">WP4</span> <span class="tag">WP6</span></td>
+        </tr>
+        <tr>
+            <td>tas</td>
+            <td>mon</td>
+            <td>K</td>
+            <td>Near-Surface Air Temperature</td>
+            <td><span class="core">I4C-CORE</span></td>
+            <td>URB-CORE</td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>tasblue</td>
+            <td>1hr</td>
+            <td>K</td>
+            <td>Near-surface temperature blue spaces</td>
+            <td></td>
+            <td>URB-URB-RCC</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>tasblue</td>
+            <td>day</td>
+            <td>K</td>
+            <td>Near-surface temperature blue spaces</td>
+            <td></td>
+            <td>URB-URB-RCC</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>tasblue</td>
+            <td>mon</td>
+            <td>K</td>
+            <td>Near-surface temperature blue spaces</td>
+            <td></td>
+            <td>URB-URB-RCC</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>tascan</td>
+            <td>1hr</td>
+            <td>K</td>
+            <td>Near-surface temperature within canyon</td>
+            <td></td>
+            <td>URB-URB-RCC</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>tascan</td>
+            <td>day</td>
+            <td>K</td>
+            <td>Near-surface temperature within canyon</td>
+            <td></td>
+            <td>URB-URB-RCC</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>tascan</td>
+            <td>mon</td>
+            <td>K</td>
+            <td>Near-surface temperature within canyon</td>
+            <td></td>
+            <td>URB-URB-RCC</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>tasgree</td>
+            <td>1hr</td>
+            <td>K</td>
+            <td>Near-surface temperature green spaces</td>
+            <td></td>
+            <td>URB-URB-RCC</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>tasgree</td>
+            <td>day</td>
+            <td>K</td>
+            <td>Near-surface temperature green spaces</td>
+            <td></td>
+            <td>URB-URB-RCC</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>tasgree</td>
+            <td>mon</td>
+            <td>K</td>
+            <td>Near-surface temperature green spaces</td>
+            <td></td>
+            <td>URB-URB-RCC</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>tasmax</td>
+            <td>1hr</td>
+            <td>K</td>
+            <td>Daily Maximum Near-Surface Air Temperature</td>
+            <td></td>
+            <td>URB-CORE</td>
+            <td></td>
+            <td>maximum from all integrated time steps per day</td>
+        </tr>
+        <tr>
+            <td>tasmax</td>
+            <td>day</td>
+            <td>K</td>
+            <td>Daily Maximum Near-Surface Air Temperature</td>
+            <td><span class="core">I4C-CORE</span></td>
+            <td>URB-CORE</td>
+            <td>CONV-CORE</td>
+            <td><span class="tag">T33</span> <span class="tag">WP4</span> maximum from all integrated time steps per day</td>
+        </tr>
+        <tr>
+            <td>tasmax</td>
+            <td>mon</td>
+            <td>K</td>
+            <td>Daily Maximum Near-Surface Air Temperature</td>
+            <td></td>
+            <td>URB-CORE</td>
+            <td></td>
+            <td>maximum from all integrated time steps per day</td>
+        </tr>
+        <tr>
+            <td>tasmin</td>
+            <td>1hr</td>
+            <td>K</td>
+            <td>Daily Minimum Near-Surface Air Temperature</td>
+            <td></td>
+            <td>URB-CORE</td>
+            <td></td>
+            <td>minimum from all integrated time steps per day</td>
+        </tr>
+        <tr>
+            <td>tasmin</td>
+            <td>day</td>
+            <td>K</td>
+            <td>Daily Minimum Near-Surface Air Temperature</td>
+            <td><span class="core">I4C-CORE</span></td>
+            <td>URB-CORE</td>
+            <td>CONV-CORE</td>
+            <td><span class="tag">T33</span> <span class="tag">WP4</span> minimum from all integrated time steps per day</td>
+        </tr>
+        <tr>
+            <td>tasmin</td>
+            <td>mon</td>
+            <td>K</td>
+            <td>Daily Minimum Near-Surface Air Temperature</td>
+            <td></td>
+            <td>URB-CORE</td>
+            <td></td>
+            <td>minimum from all integrated time steps per day</td>
+        </tr>
+        <tr>
+            <td>taspav</td>
+            <td>1hr</td>
+            <td>K</td>
+            <td>Near-surface temperature pavements</td>
+            <td></td>
+            <td>URB-URB-RCC</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>taspav</td>
+            <td>day</td>
+            <td>K</td>
+            <td>Near-surface temperature pavements</td>
+            <td></td>
+            <td>URB-URB-RCC</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>taspav</td>
+            <td>mon</td>
+            <td>K</td>
+            <td>Near-surface temperature pavements</td>
+            <td></td>
+            <td>URB-URB-RCC</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>tasroof</td>
+            <td>1hr</td>
+            <td>K</td>
+            <td>Near-surface temperature roof</td>
+            <td></td>
+            <td>URB-URB-RCC</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>tasroof</td>
+            <td>day</td>
+            <td>K</td>
+            <td>Near-surface temperature roof</td>
+            <td></td>
+            <td>URB-URB-RCC</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>tasroof</td>
+            <td>mon</td>
+            <td>K</td>
+            <td>Near-surface temperature roof</td>
+            <td></td>
+            <td>URB-URB-RCC</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>total_lightning</td>
+            <td>day</td>
+            <td>counts</td>
+            <td>Total number lightning flashes</td>
+            <td></td>
+            <td></td>
+            <td>CONV-TIER1</td>
+            <td>if supplying ic_lightning and cg_lightning just add these</td>
+        </tr>
+        <tr>
+            <td>ts</td>
+            <td>1hr</td>
+            <td>K</td>
+            <td>Surface Temperature</td>
+            <td></td>
+            <td>URB-CORE</td>
+            <td>CONV-CORE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ts</td>
+            <td>day</td>
+            <td>K</td>
+            <td>Surface Temperature</td>
+            <td><span class="tier1">I4C-TIER1</span></td>
+            <td>URB-CORE</td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>ts</td>
+            <td>mon</td>
+            <td>K</td>
+            <td>Surface Temperature</td>
+            <td><span class="tier1">I4C-TIER1</span></td>
+            <td>URB-CORE</td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>tsblue</td>
+            <td>1hr</td>
+            <td>K</td>
+            <td>Surface temperature blue spaces</td>
+            <td></td>
+            <td>URB-URB-RCC</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>tsblue</td>
+            <td>day</td>
+            <td>K</td>
+            <td>Surface temperature blue spaces</td>
+            <td></td>
+            <td>URB-URB-RCC</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>tsblue</td>
+            <td>mon</td>
+            <td>K</td>
+            <td>Surface temperature blue spaces</td>
+            <td></td>
+            <td>URB-URB-RCC</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>tsgree</td>
+            <td>1hr</td>
+            <td>K</td>
+            <td>Surface temperature green spaces</td>
+            <td></td>
+            <td>URB-URB-RCC</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>tsgree</td>
+            <td>day</td>
+            <td>K</td>
+            <td>Surface temperature green spaces</td>
+            <td></td>
+            <td>URB-URB-RCC</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>tsgree</td>
+            <td>mon</td>
+            <td>K</td>
+            <td>Surface temperature green spaces</td>
+            <td></td>
+            <td>URB-URB-RCC</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>tsl</td>
+            <td>6hr</td>
+            <td>K</td>
+            <td>Temperature of Soil</td>
+            <td></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td>Temperature of each soil layer (3D variable). Reported as missing for grid cells with no land.</td>
+        </tr>
+        <tr>
+            <td>tsl</td>
+            <td>day</td>
+            <td>K</td>
+            <td>Temperature of Soil</td>
+            <td></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td>Temperature of each soil layer (3D variable). Reported as missing for grid cells with no land.</td>
+        </tr>
+        <tr>
+            <td>tsl</td>
+            <td>mon</td>
+            <td>K</td>
+            <td>Temperature of Soil</td>
+            <td></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td>Temperature of each soil layer (3D variable). Reported as missing for grid cells with no land.</td>
+        </tr>
+        <tr>
+            <td>tspav</td>
+            <td>1hr</td>
+            <td>K</td>
+            <td>Surface temperature pavements</td>
+            <td></td>
+            <td>URB-URB-RCC</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>tspav</td>
+            <td>day</td>
+            <td>K</td>
+            <td>Surface temperature pavements</td>
+            <td></td>
+            <td>URB-URB-RCC</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>tspav</td>
+            <td>mon</td>
+            <td>K</td>
+            <td>Surface temperature pavements</td>
+            <td></td>
+            <td>URB-URB-RCC</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>tsroof</td>
+            <td>1hr</td>
+            <td>K</td>
+            <td>Surface temperature roof</td>
+            <td></td>
+            <td>URB-URB-RCC</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>tsroof</td>
+            <td>day</td>
+            <td>K</td>
+            <td>Surface temperature roof</td>
+            <td></td>
+            <td>URB-URB-RCC</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>tsroof</td>
+            <td>mon</td>
+            <td>K</td>
+            <td>Surface temperature roof</td>
+            <td></td>
+            <td>URB-URB-RCC</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>tsskin</td>
+            <td>1hr</td>
+            <td>K</td>
+            <td>Skin temperature</td>
+            <td></td>
+            <td>URB-URB-RCC</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>tsskin</td>
+            <td>day</td>
+            <td>K</td>
+            <td>Skin temperature</td>
+            <td></td>
+            <td>URB-URB-RCC</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>tsskin</td>
+            <td>mon</td>
+            <td>K</td>
+            <td>Skin temperature</td>
+            <td></td>
+            <td>URB-URB-RCC</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ua1000</td>
+            <td>1hr</td>
+            <td>m s-1</td>
+            <td>Eastward Wind</td>
+            <td><span class="tier1">I4C-TIER1</span></td>
+            <td></td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>ua1000</td>
+            <td>3hr</td>
+            <td>m s-1</td>
+            <td>Eastward Wind</td>
+            <td></td>
+            <td></td>
+            <td>CONV-CORE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ua1000</td>
+            <td>6hr</td>
+            <td>m s-1</td>
+            <td>Eastward Wind</td>
+            <td></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ua1000</td>
+            <td>day</td>
+            <td>m s-1</td>
+            <td>Eastward Wind</td>
+            <td><span class="tier1">I4C-TIER1</span></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>ua1000</td>
+            <td>mon</td>
+            <td>m s-1</td>
+            <td>Eastward Wind</td>
+            <td></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ua100m</td>
+            <td>1hr</td>
+            <td>m s-1</td>
+            <td>Eastward Wind at 100m</td>
+            <td></td>
+            <td></td>
+            <td>CONV-CORE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ua200</td>
+            <td>1hr</td>
+            <td>m s-1</td>
+            <td>Eastward Wind</td>
+            <td><span class="tier1">I4C-TIER1</span></td>
+            <td></td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>ua200</td>
+            <td>3hr</td>
+            <td>m s-1</td>
+            <td>Eastward Wind</td>
+            <td></td>
+            <td></td>
+            <td>CONV-CORE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ua200</td>
+            <td>day</td>
+            <td>m s-1</td>
+            <td>Eastward Wind</td>
+            <td><span class="tier1">I4C-TIER1</span></td>
+            <td></td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>ua500</td>
+            <td>1hr</td>
+            <td>m s-1</td>
+            <td>Eastward Wind</td>
+            <td><span class="tier1">I4C-TIER1</span></td>
+            <td></td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>ua500</td>
+            <td>3hr</td>
+            <td>m s-1</td>
+            <td>Eastward Wind</td>
+            <td></td>
+            <td></td>
+            <td>CONV-CORE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ua500</td>
+            <td>day</td>
+            <td>m s-1</td>
+            <td>Eastward Wind</td>
+            <td><span class="tier1">I4C-TIER1</span></td>
+            <td></td>
+            <td></td>
+            <td><span class="tag">T33</span> <span class="tag">WP4</span></td>
+        </tr>
+        <tr>
+            <td>ua50m</td>
+            <td>1hr</td>
+            <td>m s-1</td>
+            <td>Eastward Wind at 50m</td>
+            <td></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ua50m</td>
+            <td>day</td>
+            <td>m s-1</td>
+            <td>Eastward Wind at 50m</td>
+            <td></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ua50m</td>
+            <td>mon</td>
+            <td>m s-1</td>
+            <td>Eastward Wind at 50m</td>
+            <td></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ua700</td>
+            <td>1hr</td>
+            <td>m s-1</td>
+            <td>Eastward Wind</td>
+            <td><span class="tier1">I4C-TIER1</span></td>
+            <td></td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>ua700</td>
+            <td>3hr</td>
+            <td>m s-1</td>
+            <td>Eastward Wind</td>
+            <td></td>
+            <td></td>
+            <td>CONV-CORE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ua700</td>
+            <td>6hr</td>
+            <td>m s-1</td>
+            <td>Eastward Wind</td>
+            <td></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ua700</td>
+            <td>day</td>
+            <td>m s-1</td>
+            <td>Eastward Wind</td>
+            <td><span class="tier1">I4C-TIER1</span></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>ua700</td>
+            <td>mon</td>
+            <td>m s-1</td>
+            <td>Eastward Wind</td>
+            <td></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ua850</td>
+            <td>1hr</td>
+            <td>m s-1</td>
+            <td>Eastward Wind</td>
+            <td><span class="tier1">I4C-TIER1</span></td>
+            <td></td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>ua850</td>
+            <td>3hr</td>
+            <td>m s-1</td>
+            <td>Eastward Wind</td>
+            <td></td>
+            <td></td>
+            <td>CONV-CORE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ua850</td>
+            <td>6hr</td>
+            <td>m s-1</td>
+            <td>Eastward Wind</td>
+            <td></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ua850</td>
+            <td>day</td>
+            <td>m s-1</td>
+            <td>Eastward Wind</td>
+            <td><span class="tier1">I4C-TIER1</span></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>ua850</td>
+            <td>mon</td>
+            <td>m s-1</td>
+            <td>Eastward Wind</td>
+            <td></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ua925</td>
+            <td>1hr</td>
+            <td>m s-1</td>
+            <td>Eastward Wind</td>
+            <td><span class="tier1">I4C-TIER1</span></td>
+            <td></td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>ua925</td>
+            <td>3hr</td>
+            <td>m s-1</td>
+            <td>Eastward Wind</td>
+            <td></td>
+            <td></td>
+            <td>CONV-CORE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ua925</td>
+            <td>6hr</td>
+            <td>m s-1</td>
+            <td>Eastward Wind</td>
+            <td></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ua925</td>
+            <td>day</td>
+            <td>m s-1</td>
+            <td>Eastward Wind</td>
+            <td><span class="tier1">I4C-TIER1</span></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>ua925</td>
+            <td>mon</td>
+            <td>m s-1</td>
+            <td>Eastward Wind</td>
+            <td></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>uas</td>
+            <td>1hr</td>
+            <td>m s-1</td>
+            <td>Eastward Near-Surface Wind</td>
+            <td><span class="core">I4C-CORE</span></td>
+            <td>URB-CORE</td>
+            <td>CONV-CORE</td>
+            <td><span class="tag">T33</span> <span class="tag">WP6</span></td>
+        </tr>
+        <tr>
+            <td>uas</td>
+            <td>day</td>
+            <td>m s-1</td>
+            <td>Eastward Near-Surface Wind</td>
+            <td><span class="core">I4C-CORE</span></td>
+            <td>URB-CORE</td>
+            <td></td>
+            <td><span class="tag">T33</span> <span class="tag">WP6</span></td>
+        </tr>
+        <tr>
+            <td>uas</td>
+            <td>mon</td>
+            <td>m s-1</td>
+            <td>Eastward Near-Surface Wind</td>
+            <td><span class="core">I4C-CORE</span></td>
+            <td>URB-CORE</td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>va1000</td>
+            <td>1hr</td>
+            <td>m s-1</td>
+            <td>Northward Wind</td>
+            <td><span class="tier1">I4C-TIER1</span></td>
+            <td></td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>va1000</td>
+            <td>3hr</td>
+            <td>m s-1</td>
+            <td>Northward Wind</td>
+            <td></td>
+            <td></td>
+            <td>CONV-CORE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>va1000</td>
+            <td>6hr</td>
+            <td>m s-1</td>
+            <td>Northward Wind</td>
+            <td></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>va1000</td>
+            <td>day</td>
+            <td>m s-1</td>
+            <td>Northward Wind</td>
+            <td><span class="tier1">I4C-TIER1</span></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>va1000</td>
+            <td>mon</td>
+            <td>m s-1</td>
+            <td>Northward Wind</td>
+            <td></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>va100m</td>
+            <td>1hr</td>
+            <td>m s-1</td>
+            <td>Northward Wind at 100m</td>
+            <td></td>
+            <td></td>
+            <td>CONV-CORE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>va200</td>
+            <td>1hr</td>
+            <td>m s-1</td>
+            <td>Northward Wind</td>
+            <td><span class="tier1">I4C-TIER1</span></td>
+            <td></td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>va200</td>
+            <td>3hr</td>
+            <td>m s-1</td>
+            <td>Northward Wind</td>
+            <td></td>
+            <td></td>
+            <td>CONV-CORE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>va200</td>
+            <td>day</td>
+            <td>m s-1</td>
+            <td>Northward Wind</td>
+            <td><span class="tier1">I4C-TIER1</span></td>
+            <td></td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>va500</td>
+            <td>1hr</td>
+            <td>m s-1</td>
+            <td>Northward Wind</td>
+            <td><span class="tier1">I4C-TIER1</span></td>
+            <td></td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>va500</td>
+            <td>3hr</td>
+            <td>m s-1</td>
+            <td>Northward Wind</td>
+            <td></td>
+            <td></td>
+            <td>CONV-CORE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>va500</td>
+            <td>day</td>
+            <td>m s-1</td>
+            <td>Northward Wind</td>
+            <td><span class="tier1">I4C-TIER1</span></td>
+            <td></td>
+            <td></td>
+            <td><span class="tag">T33</span> <span class="tag">WP4</span></td>
+        </tr>
+        <tr>
+            <td>va50m</td>
+            <td>1hr</td>
+            <td>m s-1</td>
+            <td>Northward Wind at 50m</td>
+            <td></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>va50m</td>
+            <td>day</td>
+            <td>m s-1</td>
+            <td>Northward Wind at 50m</td>
+            <td></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>va50m</td>
+            <td>mon</td>
+            <td>m s-1</td>
+            <td>Northward Wind at 50m</td>
+            <td></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>va700</td>
+            <td>1hr</td>
+            <td>m s-1</td>
+            <td>Northward Wind</td>
+            <td><span class="tier1">I4C-TIER1</span></td>
+            <td></td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>va700</td>
+            <td>3hr</td>
+            <td>m s-1</td>
+            <td>Northward Wind</td>
+            <td></td>
+            <td></td>
+            <td>CONV-CORE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>va700</td>
+            <td>6hr</td>
+            <td>m s-1</td>
+            <td>Northward Wind</td>
+            <td></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>va700</td>
+            <td>day</td>
+            <td>m s-1</td>
+            <td>Northward Wind</td>
+            <td><span class="tier1">I4C-TIER1</span></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>va700</td>
+            <td>mon</td>
+            <td>m s-1</td>
+            <td>Northward Wind</td>
+            <td></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>va850</td>
+            <td>1hr</td>
+            <td>m s-1</td>
+            <td>Northward Wind</td>
+            <td><span class="tier1">I4C-TIER1</span></td>
+            <td></td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>va850</td>
+            <td>3hr</td>
+            <td>m s-1</td>
+            <td>Northward Wind</td>
+            <td></td>
+            <td></td>
+            <td>CONV-CORE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>va850</td>
+            <td>6hr</td>
+            <td>m s-1</td>
+            <td>Northward Wind</td>
+            <td></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>va850</td>
+            <td>day</td>
+            <td>m s-1</td>
+            <td>Northward Wind</td>
+            <td><span class="tier1">I4C-TIER1</span></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>va850</td>
+            <td>mon</td>
+            <td>m s-1</td>
+            <td>Northward Wind</td>
+            <td></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>va925</td>
+            <td>1hr</td>
+            <td>m s-1</td>
+            <td>Northward Wind</td>
+            <td><span class="tier1">I4C-TIER1</span></td>
+            <td></td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>va925</td>
+            <td>3hr</td>
+            <td>m s-1</td>
+            <td>Northward Wind</td>
+            <td></td>
+            <td></td>
+            <td>CONV-CORE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>va925</td>
+            <td>6hr</td>
+            <td>m s-1</td>
+            <td>Northward Wind</td>
+            <td></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>va925</td>
+            <td>day</td>
+            <td>m s-1</td>
+            <td>Northward Wind</td>
+            <td><span class="tier1">I4C-TIER1</span></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>va925</td>
+            <td>mon</td>
+            <td>m s-1</td>
+            <td>Northward Wind</td>
+            <td></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>vas</td>
+            <td>1hr</td>
+            <td>m s-1</td>
+            <td>Northward Near-Surface Wind</td>
+            <td><span class="core">I4C-CORE</span></td>
+            <td>URB-CORE</td>
+            <td>CONV-CORE</td>
+            <td><span class="tag">T33</span> <span class="tag">WP6</span></td>
+        </tr>
+        <tr>
+            <td>vas</td>
+            <td>day</td>
+            <td>m s-1</td>
+            <td>Northward Near-Surface Wind</td>
+            <td><span class="core">I4C-CORE</span></td>
+            <td>URB-CORE</td>
+            <td></td>
+            <td><span class="tag">T33</span> <span class="tag">WP6</span></td>
+        </tr>
+        <tr>
+            <td>vas</td>
+            <td>mon</td>
+            <td>m s-1</td>
+            <td>Northward Near-Surface Wind</td>
+            <td><span class="core">I4C-CORE</span></td>
+            <td>URB-CORE</td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>wa1000</td>
+            <td>3hr</td>
+            <td>m s-1</td>
+            <td>Upward Air Velocity</td>
+            <td></td>
+            <td></td>
+            <td>CONV-CORE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>wa200</td>
+            <td>3hr</td>
+            <td>m s-1</td>
+            <td>Upward Air Velocity</td>
+            <td></td>
+            <td></td>
+            <td>CONV-CORE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>wa500</td>
+            <td>3hr</td>
+            <td>m s-1</td>
+            <td>Upward Air Velocity</td>
+            <td></td>
+            <td></td>
+            <td>CONV-CORE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>wa700</td>
+            <td>3hr</td>
+            <td>m s-1</td>
+            <td>Upward Air Velocity</td>
+            <td></td>
+            <td></td>
+            <td>CONV-CORE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>wa850</td>
+            <td>3hr</td>
+            <td>m s-1</td>
+            <td>Upward Air Velocity</td>
+            <td></td>
+            <td></td>
+            <td>CONV-CORE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>wa925</td>
+            <td>3hr</td>
+            <td>m s-1</td>
+            <td>Upward Air Velocity</td>
+            <td></td>
+            <td></td>
+            <td>CONV-CORE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>wsgmax100m</td>
+            <td>day</td>
+            <td>m s-1</td>
+            <td>Maximum wind speed of gust at 100m</td>
+            <td></td>
+            <td></td>
+            <td>CONV-TIER1</td>
+            <td>new variable to include wind at turbine height</td>
+        </tr>
+        <tr>
+            <td>wsgsmax</td>
+            <td>1hr</td>
+            <td>m s-1</td>
+            <td>Daily Maximum Near-Surface Wind Speed of Gust</td>
+            <td></td>
+            <td></td>
+            <td>CONV-CORE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>wsgsmax</td>
+            <td>day</td>
+            <td>m s-1</td>
+            <td>Daily Maximum Near-Surface Wind Speed of Gust</td>
+            <td></td>
+            <td></td>
+            <td>CONV-CORE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>z0</td>
+            <td>day</td>
+            <td>m</td>
+            <td>Surface Roughness Length</td>
+            <td></td>
+            <td>URB-CORE</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>z0</td>
+            <td>mon</td>
+            <td>m</td>
+            <td>Surface Roughness Length</td>
+            <td></td>
+            <td>URB-CORE</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>zg1000</td>
+            <td>6hr</td>
+            <td>m</td>
+            <td>Geopotential Height</td>
+            <td></td>
+            <td>URB-TIER1</td>
+            <td>CONV-CORE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>zg1000</td>
+            <td>day</td>
+            <td>m</td>
+            <td>Geopotential Height</td>
+            <td></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>zg1000</td>
+            <td>mon</td>
+            <td>m</td>
+            <td>Geopotential Height</td>
+            <td></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>zg200</td>
+            <td>6hr</td>
+            <td>m</td>
+            <td>Geopotential Height</td>
+            <td></td>
+            <td></td>
+            <td>CONV-CORE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>zg500</td>
+            <td>1hr</td>
+            <td>m</td>
+            <td>Geopotential Height</td>
+            <td><span class="tier1">I4C-TIER1</span></td>
+            <td></td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>zg500</td>
+            <td>6hr</td>
+            <td>m</td>
+            <td>Geopotential Height</td>
+            <td></td>
+            <td></td>
+            <td>CONV-CORE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>zg500</td>
+            <td>day</td>
+            <td>m</td>
+            <td>Geopotential Height</td>
+            <td><span class="tier1">I4C-TIER1</span></td>
+            <td></td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>zg700</td>
+            <td>1hr</td>
+            <td>m</td>
+            <td>Geopotential Height</td>
+            <td><span class="tier1">I4C-TIER1</span></td>
+            <td></td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>zg700</td>
+            <td>6hr</td>
+            <td>m</td>
+            <td>Geopotential Height</td>
+            <td></td>
+            <td>URB-TIER1</td>
+            <td>CONV-CORE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>zg700</td>
+            <td>day</td>
+            <td>m</td>
+            <td>Geopotential Height</td>
+            <td><span class="tier1">I4C-TIER1</span></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>zg700</td>
+            <td>mon</td>
+            <td>m</td>
+            <td>Geopotential Height</td>
+            <td></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>zg850</td>
+            <td>1hr</td>
+            <td>m</td>
+            <td>Geopotential Height</td>
+            <td><span class="tier1">I4C-TIER1</span></td>
+            <td></td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>zg850</td>
+            <td>6hr</td>
+            <td>m</td>
+            <td>Geopotential Height</td>
+            <td></td>
+            <td>URB-TIER1</td>
+            <td>CONV-CORE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>zg850</td>
+            <td>day</td>
+            <td>m</td>
+            <td>Geopotential Height</td>
+            <td><span class="tier1">I4C-TIER1</span></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>zg850</td>
+            <td>mon</td>
+            <td>m</td>
+            <td>Geopotential Height</td>
+            <td></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>zg925</td>
+            <td>1hr</td>
+            <td>m</td>
+            <td>Geopotential Height</td>
+            <td><span class="tier1">I4C-TIER1</span></td>
+            <td></td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>zg925</td>
+            <td>6hr</td>
+            <td>m</td>
+            <td>Geopotential Height</td>
+            <td></td>
+            <td>URB-TIER1</td>
+            <td>CONV-CORE</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>zg925</td>
+            <td>day</td>
+            <td>m</td>
+            <td>Geopotential Height</td>
+            <td><span class="tier1">I4C-TIER1</span></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>zg925</td>
+            <td>mon</td>
+            <td>m</td>
+            <td>Geopotential Height</td>
+            <td></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>zmla</td>
+            <td>1hr</td>
+            <td>m</td>
+            <td>Height of Boundary Layer</td>
+            <td></td>
+            <td>URB-TIER1</td>
+            <td>CONV-TIER1</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>zmla</td>
+            <td>day</td>
+            <td>m</td>
+            <td>Height of Boundary Layer</td>
+            <td></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>zmla</td>
+            <td>mon</td>
+            <td>m</td>
+            <td>Height of Boundary Layer</td>
+            <td></td>
+            <td>URB-TIER1</td>
+            <td></td>
+            <td></td>
+        </tr>
+
+    </tbody>
+</table>
+</body>
+</html>
