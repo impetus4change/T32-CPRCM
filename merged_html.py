@@ -29,6 +29,6 @@ csv2datatable(
     csvout,
     f'docs/{csvout.replace(".csv",".html")}',
     title='I4C CPRCM requested variable list',
-    intro='This table includes also the priority variables from the CORDEX FPS-URB-RCC and FPS-CONV',
+    intro='This table includes also the priority variables from the CORDEX FPS-URB-RCC and FPS-CONV. Note: To avoid duplicated entries, the frequency shown for some variables in the data request from the FPS-CONV initiative has been adapted to mathch the highest frequency requested by the other two ongoing activities.',
     rename_fields = {}
 )
