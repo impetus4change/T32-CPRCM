@@ -40,7 +40,14 @@ span.tier2 {color: #d35f98; font-weight: bold}
 </style>
 </head>
 <body>
-<h1>I4C CPRCM requested variable list</h1>This table includes also the priority variables from the CORDEX FPS-URB-RCC and FPS-CONV. Note: To avoid duplicated entries, the frequency shown for some variables in the data request from the FPS-CONV initiative has been adapted to mathch the highest frequency requested by the other two ongoing activities.
+<h1>I4C CPRCM requested variable list</h1>
+        This table shows the <a href="https://github.com/impetus4change/T32-CPRCM/blob/main/data-request.csv">data request</a>
+        from the different I4C work packages and includes also the variables requested from the
+        <a href="https://github.com/impetus4change/T32-CPRCM/blob/main/data-request-fpsurbrcc.csv">CORDEX FPS-URB-RCC</a> and
+        <a href="https://github.com/impetus4change/T32-CPRCM/blob/main/data-request-fpsconv.csv">FPS-CONV</a> initiatives.
+        Note: To avoid duplicated entries, the frequency shown for some variables in the data request from the
+        FPS-CONV initiative has been adapted to match the highest frequency requested by the other two ongoing
+        activities.
 <table id="table_id" class="display">
     <thead>
         <tr>
@@ -107,7 +114,7 @@ span.tier2 {color: #d35f98; font-weight: bold}
             <td></td>
         </tr>
         <tr>
-            <td>cg_lighning</td>
+            <td>cg_lightning</td>
             <td>day</td>
             <td>counts</td>
             <td>Cloud-ground lightning flashes</td>
@@ -261,6 +268,36 @@ span.tier2 {color: #d35f98; font-weight: bold}
             <td>mon</td>
             <td>W m-2</td>
             <td>Surface Upward Latent Heat Flux</td>
+            <td></td>
+            <td>URB-CORE</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>hfso</td>
+            <td>1hr</td>
+            <td>W m-2</td>
+            <td>Ground Heat Flux</td>
+            <td></td>
+            <td>URB-CORE</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>hfso</td>
+            <td>day</td>
+            <td>W m-2</td>
+            <td>Ground Heat Flux</td>
+            <td></td>
+            <td>URB-CORE</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>hfso</td>
+            <td>mon</td>
+            <td>W m-2</td>
+            <td>Ground Heat Flux</td>
             <td></td>
             <td>URB-CORE</td>
             <td></td>
@@ -637,6 +674,16 @@ span.tier2 {color: #d35f98; font-weight: bold}
             <td>The mass of water in all phases in each soil layer (3D variable). Reported as missing for grid cells with no land.</td>
         </tr>
         <tr>
+            <td>od550aer</td>
+            <td>mon</td>
+            <td>1</td>
+            <td>Ambient Aerosol Optical Thickness at 550nm</td>
+            <td><span class="tier2">I4C-TIER2</span></td>
+            <td></td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
             <td>orog</td>
             <td>fx</td>
             <td>m</td>
@@ -811,10 +858,20 @@ span.tier2 {color: #d35f98; font-weight: bold}
             <td>1hr</td>
             <td>W m-2</td>
             <td>Surface Upwelling Longwave Radiation</td>
-            <td></td>
+            <td><span class="tier1">I4C-TIER1</span></td>
             <td></td>
             <td>CONV-CORE</td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>rlus</td>
+            <td>day</td>
+            <td>W m-2</td>
+            <td>Surface Upwelling Longwave Radiation</td>
+            <td><span class="tier1">I4C-TIER1</span></td>
             <td></td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
         </tr>
         <tr>
             <td>rootd</td>
@@ -861,10 +918,20 @@ span.tier2 {color: #d35f98; font-weight: bold}
             <td>1hr</td>
             <td>W m-2</td>
             <td>Surface Upwelling Shortwave Radiation</td>
-            <td></td>
+            <td><span class="tier1">I4C-TIER1</span></td>
             <td></td>
             <td>CONV-CORE</td>
+            <td><span class="tag">T33</span></td>
+        </tr>
+        <tr>
+            <td>rsus</td>
+            <td>day</td>
+            <td>W m-2</td>
+            <td>Surface Upwelling Shortwave Radiation</td>
+            <td><span class="tier1">I4C-TIER1</span></td>
             <td></td>
+            <td></td>
+            <td><span class="tag">T33</span></td>
         </tr>
         <tr>
             <td>sfcWind</td>
