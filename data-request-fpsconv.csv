@@ -77,7 +77,7 @@ rootd,fx,m,Maximum Root Depth,root_depth,CORE,,area: mean,area: areacella,longit
 zmla,1hr,m,Height of Boundary Layer,atmosphere_boundary_layer_thickness,TIER1,,area: mean time: point,area: areacella,longitude latitude time1,real,,,,,
 wsgmax100m,day,m s-1,Maximum wind speed of gust at 100m,wind_speed_of_gust,TIER1,new variable to include wind at turbine height,time: maximum,,,,,,,,
 ic_lightning,day,counts,Intra-cloud lightning flashes,ic_lightning,TIER1,explicitly declare how the separation between IC and CG was performed,time: sum,,,,,,,,
-cg_lighning,day,counts,Cloud-ground lightning flashes,cg_lightning,TIER1,explicitly declare how the separation between IC and CG was performed,time: sum,,,,,,,,
+cg_lightning,day,counts,Cloud-ground lightning flashes,cg_lightning,TIER1,explicitly declare how the separation between IC and CG was performed,time: sum,,,,,,,,
 total_lightning,day,counts,Total number lightning flashes,total_lightning,TIER1,if supplying ic_lightning and cg_lightning just add these,time: sum,,,,,,,,
 clgvi,1hr,kg m-2,Vertical integral of mass content of graupel,atmosphere_mass_content_of_graupel,TIER1,,time: point,,,,,,,,
 clhvi,1hr,kg m-2,Vertical integral of mass content of hail,atmosphere_mass_content_of_hail,TIER1,,time: point,,,,,,,,
