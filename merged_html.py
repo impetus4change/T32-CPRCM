@@ -34,7 +34,7 @@ csv2datatable(
         from the different I4C work packages and includes also the variables requested from the
         <a href="https://github.com/impetus4change/T32-CPRCM/blob/main/data-request-fpsurbrcc.csv">CORDEX FPS-URB-RCC</a> and
         <a href="https://github.com/impetus4change/T32-CPRCM/blob/main/data-request-fpsconv.csv">FPS-CONV</a> initiatives.
-        This merged data request table is also available as a [CSV file](https://impetus4change.github.io/T32-CPRCM/data-request-i4c-merged.csv).
+        This merged data request table is also available as a <a href="https://impetus4change.github.io/T32-CPRCM/data-request-i4c-merged.csv">CSV file</a>.
         Note: To avoid duplicated entries, the frequency shown for some variables in the data request from the
         FPS-CONV initiative has been adapted to match the highest frequency requested by the other two ongoing
         activities.''',
