@@ -5,10 +5,9 @@ name: cmor tables
 on:
   workflow_dispatch:
 
-  schedule:
-    - cron: "0 0 * * *"
-
   push:
+    paths:
+      - 'data-request-fpsurbrcc.csv'
     branches:
       - "*"
 
