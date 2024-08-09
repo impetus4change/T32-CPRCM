@@ -7,7 +7,7 @@ on:
 
   push:
     paths:
-      - 'data-request-fpsurbrcc.csv'
+      - 'docs/data-request-i4c-merged.csv'
     branches:
       - "*"
 
@@ -34,4 +34,4 @@ jobs:
 
     - name: Create tables 
       run: |
-        create-cmor-tables data-request-fpsurbrcc.csv --coords --output cmor-tables 
+        create-cmor-tables docs/data-request-i4c-merged.csv --coords --output cmor-tables 
