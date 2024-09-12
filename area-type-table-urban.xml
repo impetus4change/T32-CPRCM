@@ -1,47 +1,23 @@
   <entry id="builtup_impervious">
-    <description>
-      Built-up impervious surfaces are mainly composed of artificial materials 
-      such as gravel, glass, asphalt, and metals. These surfaces are mainly found within
-      urban areas and prevent or decelerate water infiltration.
-    </description>
+    <description>Built-up impervious surfaces are mainly composed of artificial materials such as gravel, glass, asphalt, and metals. These surfaces are mainly found within urban areas and prevent or decelerate water infiltration.</description>
   </entry>
 
   <entry id="pavement">
-    <description>
-      Pavement areas comprise the hard, flat surfaces that form walkways, roads, 
-      and other ground-level urban areas. Pavement areas are built-up impervious
-      surface areas.
-    </description>
+    <description>Pavement areas comprise the hard, flat surfaces that form walkways, roads, and other ground-level urban areas. Pavement areas are built-up impervious surface areas.</description>
   </entry>
 
   <entry id="roof">
-    <description>
-      Roof areas comprise the uppermost surfaces of buildings, regardless of
-      their material and shape. Roofs are built-up impervious surface areas.
-    </description>
-  </entry>
-
-  <entry id="urban_canyon">
-    <description>
-      In an urban area, the urban canyon areas comprise the ground-level space between
-      buildings. These areas are affected by the surrounding buildings, which 
-      impact the wind flow, sunlight penetration, temperature regulation, etc.
-    </description>
+    <description>Roof areas comprise the uppermost surfaces of buildings, regardless of their material and shape. Roofs are built-up impervious surface areas.</description>
   </entry>
 
   <entry id="urban_blue_space">
-    <description>
-      A blue space within an urban area comprises all water surfaces, either
-      natural (e.g. ponds, lakes, rivers, sea waterfronts) or artificial
-      (e.g. canals, fountains, pools).
-    </description>
+    <description>A blue space within an urban area comprises all water surfaces, either natural (e.g. ponds, lakes, rivers, sea waterfronts) or artificial (e.g. canals, fountains, pools).</description>
   </entry>
 
   <entry id="urban_green_space">
-    <description>
-      A green space within an urban area comprises all vegetated areas, such as
-      parks or gardens. Unlike non-urban vegetated areas, urban green spaces are
-      subject to the effect of the surrounding urban environment, e.g. shadows and
-      radiation trapping by the buildings.
-    </description>
+    <description>A green space within an urban area comprises all vegetated areas, such as parks or gardens. Unlike non-urban vegetated areas, urban green spaces are subject to the effect of the surrounding urban environment, e.g. shadows and radiation trapping by the buildings.</description>
+  </entry>
+
+  <entry id="urban_canyon">
+    <description>In an urban area, the urban canyon areas comprise the ground-level space between buildings. These areas are affected by the surrounding buildings, which impact the wind flow, sunlight penetration, temperature regulation, etc.</description>
   </entry>
