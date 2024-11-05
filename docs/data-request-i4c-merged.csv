@@ -1,4 +1,4 @@
-out_name,frequency,units,long_name,standard_name,priority,priority-urb,priority-conv,comment,cell_measures,cell_methods,dimensions,ok_max_mean_abs,ok_min_mean_abs,positive,type,valid_max,valid_min
+out_name,frequency,units,long_name,standard_name,priority,priority_urb,priority_conv,comment,cell_measures,cell_methods,dimensions,ok_max_mean_abs,ok_min_mean_abs,positive,type,valid_max,valid_min
 anthroheat,1hr,W/m2,Anthropogenic heat flux,anthropogenic_heatflux,,URB-URB-RCC,,On grid cell avarage,area: areacella,,,,,,real,,
 anthroheat,day,W/m2,Anthropogenic heat flux,anthropogenic_heatflux,,URB-URB-RCC,,On grid cell avarage,area: areacella,,,,,,real,,
 anthroheat,mon,W/m2,Anthropogenic heat flux,anthropogenic_heatflux,,URB-URB-RCC,,On grid cell avarage,area: areacella,,,,,,real,,
@@ -241,9 +241,11 @@ wsgsmax,1hr,m s-1,Daily Maximum Near-Surface Wind Speed of Gust,wind_speed_of_gu
 wsgsmax,day,m s-1,Daily Maximum Near-Surface Wind Speed of Gust,wind_speed_of_gust,,,CONV-CORE,,area: areacella,area: mean time: maximum,longitude latitude time height10m,,,,real,,
 z0,day,m,Surface Roughness Length,surface_roughness_length,,URB-CORE,,,area: areacella,area: time: mean,longitude latitude time,,,,real,,
 z0,mon,m,Surface Roughness Length,surface_roughness_length,,URB-CORE,,,area: areacella,area: time: mean,longitude latitude time,,,,real,,
+zg1000,1hr,m,Geopotential Height,geopotential_height,I4C-TIER1,,,#T33,area: areacella,area: mean time: point,longitude latitude time1 p1000,,,,real,,
 zg1000,6hr,m,Geopotential Height,geopotential_height,,URB-TIER1,CONV-CORE,,area: areacella,area: mean time: point,longitude latitude time1 p1000,,,,real,,
 zg1000,day,m,Geopotential Height,geopotential_height,,URB-TIER1,,,area: areacella,area: time: mean,longitude latitude time p1000,,,,real,,
 zg1000,mon,m,Geopotential Height,geopotential_height,,URB-TIER1,,,area: areacella,area: time: mean,longitude latitude time p1000,,,,real,,
+zg200,1hr,m,Geopotential Height,geopotential_height,I4C-TIER1,,,#T33,area: areacella,area: mean time: point,longitude latitude time1 p200,,,,real,,
 zg200,6hr,m,Geopotential Height,geopotential_height,,,CONV-CORE,,area: areacella,area: mean time: point,longitude latitude time1 p200,,,,real,,
 zg500,1hr,m,Geopotential Height,geopotential_height,I4C-TIER1,,CONV-CORE,#T33,area: areacella,area: mean time: point,longitude latitude time1 p500,,,,real,,
 zg500,day,m,Geopotential Height,geopotential_height,I4C-TIER1,,,#T33,area: areacella,area: time: mean,longitude latitude time p500,,,,real,,
