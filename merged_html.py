@@ -12,13 +12,13 @@ data_request_fpsurbrcc.set_index(['out_name', 'frequency'], inplace=True)
 data_request_fpsconv.set_index(['out_name', 'frequency'], inplace=True)
 
 data_request['priority'] = 'I4C-' + data_request['priority'].astype(str)
-data_request_fpsurbrcc.rename(columns={'priority': 'priority-urb'}, inplace=True)
-data_request_fpsurbrcc['priority-urb'] = 'URB-' + data_request_fpsurbrcc['priority-urb'].astype(str)
-data_request_fpsconv.rename(columns={'priority': 'priority-conv'}, inplace=True)
-data_request_fpsconv['priority-conv'] = 'CONV-' + data_request_fpsconv['priority-conv'].astype(str)
+data_request_fpsurbrcc.rename(columns={'priority': 'priority_urb'}, inplace=True)
+data_request_fpsurbrcc['priority_urb'] = 'URB-' + data_request_fpsurbrcc['priority_urb'].astype(str)
+data_request_fpsconv.rename(columns={'priority': 'priority_conv'}, inplace=True)
+data_request_fpsconv['priority_conv'] = 'CONV-' + data_request_fpsconv['priority_conv'].astype(str)
 
-columns_all = ['units', 'long_name', 'standard_name', 'priority', 'priority-urb', 'priority-conv', 'comment', 'cell_measures', 'cell_methods', 'dimensions', 'ok_max_mean_abs', 'ok_min_mean_abs', 'positive', 'type', 'valid_max', 'valid_min']
-columns_display = ['units', 'long_name', 'priority', 'priority-urb', 'priority-conv', 'comment']
+columns_all = ['units', 'long_name', 'standard_name', 'priority', 'priority_urb', 'priority_conv', 'comment', 'cell_measures', 'cell_methods', 'dimensions', 'ok_max_mean_abs', 'ok_min_mean_abs', 'positive', 'type', 'valid_max', 'valid_min']
+columns_display = ['units', 'long_name', 'priority', 'priority_urb', 'priority_conv', 'comment']
 
 merged_df = data_request.combine_first(data_request_fpsurbrcc).combine_first(data_request_fpsconv)
 merged_df.loc[:,columns_all].reset_index().to_csv(f'docs/{csvout}', index=False)
