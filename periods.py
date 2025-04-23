@@ -101,5 +101,5 @@ if __name__ == '__main__':
 
     plt.subplots_adjust(left=0.2)
 #    plt.show()
-    plt.savefig(yfile.replace('.yaml', '.pdf'), format='pdf', bbox_inches='tight')
-    plt.savefig(yfile.replace('.yaml', '.png'), format='png', dpi=400, bbox_inches='tight')
+    plt.savefig('docs/' + yfile.replace('.yaml', '.pdf'), format='pdf', bbox_inches='tight')
+    plt.savefig('docs/' + yfile.replace('.yaml', '.png'), format='png', dpi=400, bbox_inches='tight')
