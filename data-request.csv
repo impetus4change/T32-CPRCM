@@ -33,7 +33,7 @@ rlds,day,W m-2,Surface Downwelling Longwave Radiation,surface_downwelling_longwa
 rlds,1hr,W m-2,Surface Downwelling Longwave Radiation,surface_downwelling_longwave_flux_in_air,CORE,#T33 #WP6,area: time: mean,area: areacella,longitude latitude time,real,down,,,,
 mrros,1hr,kg m-2 s-1,Surface Runoff,surface_runoff_flux,CORE,#WP6,area: mean where land time: mean,area: areacella,longitude latitude time,real,,,,,
 mrro,1hr,kg m-2 s-1,Total Runoff,runoff_flux,CORE,#WP6,area: mean where land time: mean,area: areacella,longitude latitude time,real,,,,,
-mrso,1hr,kg m-2,Total Soil Moisture Content,mass_content_of_water_in_soil,CORE,"#WP6 The mass of water in all phases per unit area, summed over all soil layers.",area: mean where land time: point,area: areacella,longitude latitude time1,real,,,,,
+mrso,1hr,kg m-2,Total Soil Moisture Content,mass_content_of_water_in_soil,CORE,"#WP6 The mass of water in all phases per unit area summed over all soil layers.",area: mean where land time: point,area: areacella,longitude latitude time1,real,,,,,
 snw,1hr,kg m-2,Surface Snow Amount,surface_snow_amount,CORE,#WP6,area: mean where land time: point,area: areacella,longitude latitude time1,real,,,,,
 orog,fx,m,Surface Altitude,surface_altitude,CORE,#T33 #WP4 #WP6,area: mean,area: areacella,longitude latitude,real,,,,,
 sftlf,fx,%,Percentage of the Grid Cell Occupied by Land,land_area_fraction,CORE,#T33 #WP4 #WP6,area: mean,area: areacella,longitude latitude,real,,,,,
