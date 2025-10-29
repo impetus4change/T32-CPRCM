@@ -19,10 +19,10 @@ CNRM-MF_CNRM-AROME:
     - 2043-2062 GWL2
     - 2063-2082 GWL3
     - 2080-2099 GWL4
-    - 2015-2100@2079 # Full transient to cover all GWL
+    - 2015-2100@2091 # Full transient to cover all GWL
 
 CSIC_WRF451:
-  evaluation: 2000-2009@2002/02/28
+  evaluation: 2000-2009@2010/01
   reference: 1995-2014@completed
   scenarios:
     - 2081-2100@completed GWL3 # NorESM2-MM r1 ssp370
@@ -56,7 +56,7 @@ ICTP_RegCM5:
     - 2015-2042@2033 # Transient to cover up to GWL2
 
 DMI_HCLIM:
-  evaluation: 2000-2009
+  evaluation: 2000-2009@2004/11
   reference: 1995-2014@completed
   scenarios:
     - 2002-2021@completed GWL1.5 # EC-Earth3-Veg r1 ssp370
