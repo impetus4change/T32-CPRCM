@@ -28,22 +28,22 @@ CSIC_WRF451:
     - 2081-2100@completed GWL3 # NorESM2-MM r1 ssp370
 
 NORCE_WRF451:
-  evaluation: 2000-2009@2000/03
+  evaluation: 2000-2009@completed
   reference: 1995-2014@completed
   scenarios:
     - 2081-2100@completed GWL3 # NorESM2-MM r1 ssp370
 
 GERICS_REMO_ALPX:
   evaluation: 2000-2009@completed
-  reference: 1995-2014
+  reference: 1995-2014@2010
   scenarios:
-    - 2072-2091 GWL3 # MPI-ESM-1-2-HR r1 ssp370
+    - 2072-2091@2088 GWL3 # MPI-ESM-1-2-HR r1 ssp370
 
 GERICS_REMO_NSEA:
   evaluation: 2000-2009@completed
-  reference: 1995-2014@1996
+  reference: 1995-2014@completed
   scenarios:
-    - 2072-2091 GWL3 # MPI-ESM-1-2-HR r1 ssp370
+    - 2072-2091@2088 GWL3 # MPI-ESM-1-2-HR r1 ssp370
 
 ICTP_RegCM5:
   evaluation: 2000-2009@completed
@@ -51,9 +51,9 @@ ICTP_RegCM5:
   scenarios:
     - 2002-2021 GWL1.5 # EC-Earth3-Veg r1 ssp370
     - 2023-2042 GWL2
-    - 2048-2067@2060 GWL3
+    - 2048-2067@2077 GWL3
     - 2067-2086 GWL4
-    - 2015-2042@2033 # Transient to cover up to GWL2
+    - 2015-2042@2036 # Transient to cover up to GWL2
 
 DMI_HCLIM:
   evaluation: 2000-2009@2004/11
