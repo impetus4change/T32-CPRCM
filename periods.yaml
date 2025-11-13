@@ -21,13 +21,14 @@ CNRM-MF_CNRM-AROME:
     - 2080-2099 GWL4
     - 2015-2100@2091 # Full transient to cover all GWL
 
-CSIC_WRF451:
-  evaluation: 2000-2009@2010/01
-  reference: 1995-2014@completed
+CSIC_WRF451R-CI4C:
+  evaluation:
+    - 2000-2009@completed
+    - 2021-2023@2021/02
   scenarios:
     - 2081-2100@completed GWL3 # NorESM2-MM r1 ssp370
 
-NORCE_WRF451:
+NORCE_WRF451R-CI4C:
   evaluation: 2000-2009@completed
   reference: 1995-2014@completed
   scenarios:
