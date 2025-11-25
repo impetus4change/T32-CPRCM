@@ -25,6 +25,7 @@ CSIC_WRF451R-CI4C:
   evaluation:
     - 2000-2009@completed
     - 2021-2023@2021/02
+  reference: 1995-2014@completed
   scenarios:
     - 2081-2100@completed GWL3 # NorESM2-MM r1 ssp370
 
