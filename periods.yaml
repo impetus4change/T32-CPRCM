@@ -11,7 +11,7 @@
     - 2021-2023 # Period of extended observations over Paris
 
 CNRM-MF_CNRM-AROME:
-  evaluation: 1959-2023@2021
+  evaluation: 1959-2023@completed
   reference: 1990-2014@completed
   scenarios:
     - 2009-2028 GWL1
@@ -19,7 +19,7 @@ CNRM-MF_CNRM-AROME:
     - 2043-2062 GWL2
     - 2063-2082 GWL3
     - 2080-2099 GWL4
-    - 2015-2100@2091 # Full transient to cover all GWL
+    - 2015-2100@completed # Full transient to cover all GWL
 
 CSIC_WRF451R-CI4C:
   evaluation:
