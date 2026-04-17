@@ -46,6 +46,22 @@
             "PARIS-12": {
                 "domain": "Paris",
                 "domain_id": "PARIS-12"
+            },
+            "JNB-3": {
+                "domain": "Johannesburg",
+                "domain_id": "JNB-3"
+            },
+            "JNB-12": {
+                "domain": "Johannesburg",
+                "domain_id": "JNB-12"
+            },
+            "ALPX-3": {
+                "domain": "ALP eXtended",
+                "domain_id": "ALPX-3"
+            },
+            "NSEA-3": {
+                "domain": "North SEA",
+                "domain_id": "NSEA-3"
             }
         },
         "institution_id": {
@@ -1143,6 +1159,22 @@
                 "source_type": "ARCM",
                 "source": "Hadley Centre Regional Model using Global Atmosphere version 7-05 (2018)"
             },
+            "REMO2020-TEB": {
+                "activity_participation": [
+                    "DD"
+                ],
+                "cohort": [
+                    "Registered"
+                ],
+                "institution_id": [
+                    "GERICS"
+                ],
+                "label": "REMO2020-TEB",
+                "license": "https://cordex.org/data-access/cordex-cmip6-data/cordex-cmip6-terms-of-use",
+                "source_id": "REMO2020-TEB",
+                "source_type": "ARCM",
+                "source": "REMO regional model with town energy balance (TEB) (2022)"
+            },
             "REMO2020": {
                 "activity_participation": [
                     "DD"
@@ -1190,6 +1222,25 @@
                 "source_id": "WRF451Q",
                 "source_type": "ARCM",
                 "source": "Weather Research and Forecasting model version 4.5.1, CORDEX WRF Community configuration Q (2022)"
+            },
+            "REMO2020-2-2-TEB": {
+                "activity_participation": [
+                    "DD"
+                ],
+                "cohort": [
+                    "Registered"
+                ],
+                "institution_id": [
+                    "GERICS"
+                ],
+                "label": "REMO2020 v2.2 TEBv3",
+                "license": "https://cordex.org/data-access/cordex-cmip6-data/cordex-cmip6-terms-of-use",
+                "source_id": "REMO2020-2-2-TEB",
+                "source_type": "ARCM",
+                "source": [
+                    "Regional Climate Model REMO, version 2.2, hydrostatic configuration with MACv2 aerosol forcing, Fresh-water Lake model (FLake) and Town Energy Model v3 (2023)",
+                    "Regional Climate Model REMO, version 2.2, hydrostatic configuration with MACv2 aerosol forcing, Fresh-water Lake model (FLake) and Town Energy Model v3"
+                ]
             }
         },
         "source_type": {
