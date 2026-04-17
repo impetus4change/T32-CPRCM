@@ -32,7 +32,8 @@
             "ESD": "Empirical-statistical downscaling"
         },
         "project_id": {
-            "CORDEX": "Coordinated Regional Climate Downscaling Experiment"
+            "CORDEX": "Coordinated Regional Climate Downscaling Experiment",
+            "FPS-URB-RCC": "Flagship Pilot Study (FPS) URBan environments and Regional Climate Change (RCC)"
         },
         "domain_id": {
             "EUR-12": {
