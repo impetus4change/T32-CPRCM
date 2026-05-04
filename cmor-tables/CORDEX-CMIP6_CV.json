@@ -29,11 +29,11 @@
         ],
         "activity_id": {
             "DD": "Dynamical downscaling",
-            "ESD": "Empirical-statistical downscaling"
+            "ESD": "Empirical-statistical downscaling",
+            "FPS-URB-RCC": "Flagship Pilot Study (FPS) URBan environments and Regional Climate Change (RCC)"
         },
         "project_id": {
-            "CORDEX": "Coordinated Regional Climate Downscaling Experiment",
-            "FPS-URB-RCC": "Flagship Pilot Study (FPS) URBan environments and Regional Climate Change (RCC)"
+            "CORDEX-CMIP6": "Coordinated Regional Climate Downscaling Experiment"
         },
         "domain_id": {
             "EUR-12": {
