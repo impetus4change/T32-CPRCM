@@ -1,0 +1,23 @@
+  <entry id="urban_builtup_impervious">
+    <description>Urban built-up impervious areas are a component of urban areas that prevent or decelerate water infiltration, have no or limited water storage, and are composed of artificial materials such as concrete, asphalt, glass, tile or metal. Urban built-up impervious areas are the sum of urban impervious roof and urban impervious pavement area types.</description>
+  </entry>
+
+  <entry id="urban_impervious_pavement">
+    <description>Urban pavement areas comprise the hard, flat surfaces that form walkways, roads, and other ground-level urban areas. Urban impervious pavement areas prevent or decelerate water infiltration and soil evaporation, with no or limited water storage capacity.</description>
+  </entry>
+
+  <entry id="urban_impervious_roof">
+    <description>Urban impervious roof areas comprise the uppermost surfaces of buildings, regardless of their material and shape. Urban impervious roofs are impervious surface areas, with no or limited water storage capacity.</description>
+  </entry>
+
+  <entry id="urban_blue_space">
+    <description>Urban blue spaces are open water areas within an urban area. Urban blue spaces include all water surfaces, either natural (e.g. ponds, lakes, rivers, sea waterfronts) or artificial (e.g. canals, fountains, pools).</description>
+  </entry>
+
+  <entry id="urban_green_space">
+    <description>An urban green space comprises all areas which do not limit soil infiltration and evaporation within urban areas, such as parks, gardens, lawns and bare soil. Unlike non-urban vegetated areas, urban green spaces are subject to the effect of the surrounding urban environment, e.g. shadows and radiation trapping by the buildings.</description>
+  </entry>
+
+  <entry id="urban_canyon">
+    <description>In an urban area, the urban canyon areas comprise the ground-level space between buildings. These areas are affected by the surrounding buildings, which impact the wind flow, sunlight penetration, temperature regulation, etc. Urban canyon areas may include impervious pavement, green space and blue space areas.</description>
+  </entry>
