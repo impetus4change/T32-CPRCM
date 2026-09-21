@@ -57,7 +57,7 @@ ICTP_RegCM5:
     - 2023-2042 GWL2
     - 2048-2067@completed GWL3
     - 2067-2086@completed GWL4
-    - 2015-2042@completed # Transient to cover up to GWL2
+    - 2015-2047@completed # Transient to cover up to GWL3
 
 DMI_HCLIM:
   evaluation: 2000-2009@completed
